@@ -17,7 +17,7 @@ function Header() {
                 <header className="header">
                     <div className="header__content">
 
-                        <Link to="/" className="header__content-logo">
+                        <Link to="/youmeal/" className="header__content-logo">
                             <img
                                 src={logo}
                                 alt="Logo"
@@ -32,7 +32,7 @@ function Header() {
 
                             ) : user ? (
                                 <>
-                                    <NavLink to="/user" className="header__btn">
+                                    <NavLink to="/youmeal/user" className="header__btn">
                                         {user.name}
                                     </NavLink>
 
@@ -42,7 +42,7 @@ function Header() {
                                 <>
                                     <NavLink
                                         className="header__btn"
-                                        to="/register"
+                                        to="/youmeal/register"
                                     >
                                         Register
                                     </NavLink>
@@ -51,7 +51,7 @@ function Header() {
 
                                     <NavLink
                                         className="header__btn"
-                                        to="/login"
+                                        to="/youmeal/login"
                                     >
                                         Login
                                     </NavLink>
