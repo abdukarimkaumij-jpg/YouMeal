@@ -68,7 +68,7 @@ const ContextProvider = createContext({});
 
                 setErrorMessage("");
 
-                navigate("/");
+                navigate("/youmeal/");
             } catch (error) {
                 setErrorMessage(
                     error?.response?.data?.message ||

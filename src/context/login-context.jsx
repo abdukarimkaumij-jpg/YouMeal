@@ -50,7 +50,7 @@ export const LoginProvider = ({ children }) => {
                 localStorage.setItem("accessToken", token);
                 await Promise.all([getUser(), getCart()]);
 
-                navigate("/");
+                navigate("/youmeal/");
                 return true;
             }
 
