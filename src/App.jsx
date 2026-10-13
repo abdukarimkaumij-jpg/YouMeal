@@ -13,7 +13,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/youmeal/" element={<Home />} />
+        <Route path="abdukarimkaumij-jpg.github.io/youmeal/" element={<Home />} />
         <Route path="/youmeal/register" element={<Register/>} />
         <Route path="/youmeal/login" element={<Login/>} />
         <Route path="/youmeal/user" element={<User/>} />
