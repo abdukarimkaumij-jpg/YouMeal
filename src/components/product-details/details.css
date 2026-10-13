@@ -1,0 +1,251 @@
+
+.details {
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.details__content {
+    position: absolute;
+    width: min(900px, 90%);
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 24px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.details__content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.details__header-name {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    color: #000;
+}
+
+.details__content-body {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.details__body-img {
+    width: 50%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.details__img-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details__body-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.details__info-text {
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000;
+}
+
+.details__compound-name {
+    margin-bottom: 5px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    color: #000;
+}
+
+.details__item-list {
+    margin-bottom: 2px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #000;
+}
+
+.details__item-info {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #b1b1b1;
+}
+
+.details__info-price {
+    margin-top: auto;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000;
+}
+
+.details__info-button {
+    margin-top: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 11px 32px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    background: #ff7020;
+    cursor: pointer;
+}
+
+
+/* =========================
+   TABLET — 768px
+========================= */
+
+@media (max-width: 768px) {
+
+    .details__content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .details__header-name {
+        font-size: 32px;
+    }
+
+    .details__body-img {
+        height: 320px;
+    }
+
+    .details__info-text {
+        font-size: 15px;
+    }
+
+    .details__info-button {
+        margin-top: 25px;
+    }
+}
+
+
+/* =========================
+   MOBILE — 576px
+========================= */
+
+@media (max-width: 576px) {
+
+    .details__content {
+        width: 92%;
+        max-height: 90vh;
+        padding: 16px;
+        border-radius: 18px;
+    }
+
+    .details__content-header {
+        margin-bottom: 15px;
+    }
+
+    .details__header-name {
+        font-size: 26px;
+    }
+
+    .details__content-body {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .details__body-img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .details__body-info {
+        width: 100%;
+    }
+
+    .details__info-text {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .details__info-price {
+        margin-top: 20px;
+        font-size: 22px;
+    }
+
+    .details__info-button {
+        margin-top: 20px;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE — 425px
+========================= */
+
+@media (max-width: 425px) {
+
+    .details__content {
+        width: 94%;
+        padding: 14px;
+        border-radius: 16px;
+    }
+
+    .details__header-name {
+        font-size: 22px;
+    }
+
+    .details__body-img {
+        height: 200px;
+        border-radius: 12px;
+    }
+
+    .details__info-text {
+        font-size: 13px;
+    }
+
+    .details__info-price {
+        font-size: 20px;
+    }
+
+    .details__info-button {
+        padding: 11px 16px;
+        font-size: 14px;
+    }
+}
+
+.details__header-close {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #000;
+    background: #f2f2f3;
+}

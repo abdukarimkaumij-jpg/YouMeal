@@ -1,0 +1,11 @@
+.main__content {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px ;
+}
+@media (max-width: 1024px) {
+    .main__content {
+        flex-direction: column;
+    }
+}

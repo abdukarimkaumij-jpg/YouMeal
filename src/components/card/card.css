@@ -1,0 +1,162 @@
+.car-fixed {
+    position: relative;
+    width: 30%;
+}
+.card {
+    padding: 25px 15px;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__header-name {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #000;
+}
+.card__header-number {
+    border-radius: 6px;
+    background: #f2f2f3;
+    padding: 5px 15px;
+    font-family: var(--font-family);
+    color: #000;
+}
+.card__position-group {
+    position: relative;
+    padding: 15px 0;
+    border-bottom: 2px solid #f2f2f3;
+    border-top: 2px solid #f2f2f3;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 30px;
+}
+.card__group-remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: transparent;
+    color: #a0a0a5;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+}
+.card__group-remove:hover {
+    color: #ff3b30;
+}
+.card__group-bg {
+    border-radius: 8px;
+    width: 64px;
+    height: 52px;
+    overflow: hidden;
+}
+.card__group-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card__info-name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+}
+.card__info-oldprice {
+    margin: 1px 0 6px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #b1b1b1;
+}
+.card__info-price {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+}
+.card__group-quantity {
+    height: 40px;
+    border-radius: 12px;
+    background: #f2f2f3;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 15px;
+}
+.card__quantity-number,
+.card__quantity-btn {
+    text-align: center;
+    height: 100%;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+.card__body-total {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__total-name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000;
+}
+.card__total-price {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: right;
+    color: #000;
+}
+.card__body-btn {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 11px 32px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    background: #ff7020;
+}
+.card__body-message {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card__body-message p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+}
+.card__body-empty {
+    margin-top: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+}
+@media (max-width: 1024px) {
+    .car-fixed {
+        width: 100%;
+    }
+}
